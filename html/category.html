@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vendors/boostrap5.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/headerStyle/header.css">
+    <link rel="stylesheet" href="/style/footerStyle/footer.css">
+    <link rel="stylesheet" href="/style/categoryStyle/category.css">
+    <link rel="stylesheet" href="/style/homepageStyle/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Category</title>
+</head>
+
+<body>
+    <HeaderComponent></HeaderComponent>
+    <section>
+        <div class="body">
+            <div class="container">
+                <div class="category-title">
+                    <h1>5G Phones</h1>
+                </div>
+                <div class="category-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="filter">
+                                <div class="price">
+                                    <div class="filter-title">
+                                        Price
+                                    </div>
+                                    <div class="filter-price">
+                                        <div class="range">
+                                            <div class="range-slider">
+                                                <span class="range-selected"></span>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="min" min="0" max="3000" value="0" step="10">
+                                                <input type="range" class="max" min="0" max="3000" value="3000"
+                                                    step="10">
+                                            </div>
+                                            <div class="range-price">
+                                                <div class="range-number">
+                                                    <span>$</span><input type="number" name="min" value="0">
+                                                        
+                                                    <span>$</span><input type="number" name="max" value="3000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-brand">
+                                    <div class="filter-title">
+                                        Brand
+                                    </div>
+                                    <div class="filter-brand-content">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Digimate
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Futech
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                jbe
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                phonee
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Senco
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="filter-color">
+                                    <div class="filter-title">
+                                        Color
+                                    </div>
+                                    <div class="filter-color-item">
+                                        <i class="fa-solid fa-circle" style="color: #01b8e4;"></i>
+                                        <i class="fa-solid fa-circle" ></i>
+                                        <i class="fa-solid fa-circle" style="color: #c2c2c2;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #c2f45a;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #a13bcf;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #ff655e;"></i>
+                                        <i class="fa-solid fa-circle" style="color: white;"></i>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="filter-hhd-size">
+                                    <div class="filter-title">
+                                        HHD Size
+                                    </div>
+                                    <div class="filter-hhd-size-content">
+                                        <button class="btn">
+                                            1 TB
+                                        </button>
+                                        <button class="btn">
+                                            2 TB
+                                        </button>
+                                        <button class="btn">
+                                            512 GB
+                                        </button>
+                                        <button class="btn">
+                                            64 GB
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="filter-screen-size">
+                                    <div class="filter-title">
+                                        Screen size
+                                    </div>
+                                    <div class="filter-screen-size-content">
+                                        <button class="btn">
+                                           1.57"
+                                        </button>
+                                        <button class="btn">
+                                            13.3"
+                                        </button>
+                                        <button class="btn">
+                                            14.1"
+                                        </button>
+                                        <button class="btn">
+                                            15.4"
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="filter-other">
+                                    <div class="form-check" >
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            In tock
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Out of stock
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="results-sort">
+                                <div class="result">
+                                    Showing all 2 results
+                                </div>
+                                <div class="sort">
+                                    <span>Show: </span>
+                                    <div class="sort-number">
+                                        6 <span>12</span> 24 36
+                                    </div> 
+                                    <div class="sort-grid">
+                                        <i class="fa-regular fa-table-cells"></i>
+                                        <i class="fa-thin fa-grid-4"></i>
+                                        <i class="fa-regular fa-diagram-lean-canvas"></i>
+                                        <i class="fa-solid fa-table-cells-large"></i>
+                                    </div>
+                                    <div class="btn-sorting">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Default sorting
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-products">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic4.webp" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">BeMouse1</h5>
+                                                <p class="card-text"><i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="card-text">$68.99</p>
+            
+                                            </div>
+                                            <div class="card-hover">
+                                                <div class="card-hover-item">
+                                                    <i class="fa-sharp fa-regular fa-link-simple"></i>
+                                                </div>
+                                                <div class="card-hover-item">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                                <div class="card-hover-item">
+                                                    <i class="fa-light fa-arrows-up-down-left-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic16.webp" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">BeMouse1</h5>
+                                                <p class="card-text"><i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="card-text">$68.99</p>
+            
+                                            </div>
+                                            <div class="card-hover">
+                                                <div class="card-hover-item">
+                                                    <i class="fa-sharp fa-regular fa-link-simple"></i>
+                                                </div>
+                                                <div class="card-hover-item">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                                <div class="card-hover-item">
+                                                    <i class="fa-light fa-arrows-up-down-left-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <FooterComponent></FooterComponent>
+    </section>
+</body>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/category.js"></script>
+<script type="text/javascript" src="/vendors/boostrap5.0.3/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+</html>

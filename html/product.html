@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vendors/boostrap5.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/headerStyle/header.css">
+    <link rel="stylesheet" href="/style/footerStyle/footer.css">
+    <link rel="stylesheet" href="/style/categoryStyle/category.css">
+    <link rel="stylesheet" href="/style/homepageStyle/homePage.css">
+    <link rel="stylesheet" href="/style/productStyle/product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Product</title>
+</head>
+
+<body>
+    <HeaderComponent></HeaderComponent>
+    <section>
+        <div class="body">
+            <div class="product-page-title">
+                <h1>Shop</h1>
+                <p>Home <span> <i class="fa-solid fa-chevron-right"></i> </span> BeSmartphone1</p>
+            </div>
+            <div class="product-page-content">
+                <div class="container">
+                    <div class="product-detail">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12 col-sm-12 img-product">
+                                <div class="preview">
+                                        <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic4.webp"
+                                            class="image"    
+                                        alt="">
+                                       
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12">
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        BeSmartphone1
+                                    </div>
+                                    <div class="product-rate">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <span>
+                                            (1 customer review)
+                                        </span>
+                                    </div>
+                                    <div class="product-des">
+                                        Ex etiam lacus pharetra ipsum scelerisque ante ultricies lectus sollicitudin
+                                        maximus.
+                                        Class platea montes pede hendrerit leo ligula sem elit ante ut.
+                                        Torquent vehicula consequat fringilla vitae lacinia tortor.
+                                        Vestibulum senectus a imperdiet potenti rutrum ad ornare.
+                                    </div>
+
+                                    <div class="product-price">
+                                        $210.00 - $250.00
+                                    </div>
+                                    <div class="product-color">
+                                        <span>Color </span>
+                                        <i class="fa-solid fa-circle" style="color: #c2f45a;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #a13bcf;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #ff655e;"></i>
+                                    </div>
+                                    <hr>
+                                    <div class="product-hhd-size">
+                                        <span>HHD Size</span>
+                                        <button class="btn">
+                                            512 GB
+                                        </button>
+                                        <button class="btn">
+                                            64 GB
+                                        </button>
+                                    </div>
+                                    <div class="quantity-add-to-cart">
+
+                                        <div class="product-quantity">
+                                            <button class="minus">-</button>
+                                            <input class="number" type="text" Value="1">
+                                            <button class="plus">+</button>
+                                        </div>
+
+                                        <div class="product-add-to-cart">
+                                            <button type="button" class="btn">Add to cart</button>
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="product-tags">
+                                        Tags:
+                                        <p>Communication</p>
+                                        <p>Phone</p>
+                                        <p>Smartphone</p>
+                                    </div>
+                                    <div class="product-categories">
+                                        Categories:
+                                        <p>5G Phones</p>,
+                                        <p>Prepaid phones </p>,
+                                        <p>Smartphones</p>,
+                                        <p>Unlocked phones</p>,
+                                    </div>
+                                    <div class="product-sku">
+                                        <span>SKU: BE/BS3/0004</span>
+                                    </div>
+                                    <hr>
+                                    <div class="product-share">
+                                        Share <i class="fa-brands fa-pinterest-p"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail-more">
+
+                    <div class="product-detail-more-title">
+                        <div class="product-detail-more-title-item" onclick="onDes()" id="des-title">
+                            Description
+                        </div>
+                        <div class="product-detail-more-title-item" onclick="onAdd()" id="add-title">
+                            Additional information
+                        </div>
+                        <div class="product-detail-more-title-item" onclick="onReview()" id="review-title">
+                            Review
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="detail-more-content">
+                            <div class="detail-more-content-des" id="description">
+                                The future is now. New<br> <span>BePhone Pro</span>.
+                            </div>
+                            <div class="detail-more-content-additional" id="additional">
+                                <div class="detail-more-content-additional-item">
+                                    <div class="item-left">
+                                        Weight
+                                    </div>
+                                    <div class="line"></div>
+                                        <span>1kg</span>
+                                </div>
+                                <div class="detail-more-content-additional-item">
+                                    <div class="item-left">
+                                        Dimensions
+                                    </div>
+                                    <div class="line"></div>
+                                        <span>25 × 125 × 25 cm</span>
+                                </div>
+                                <div class="detail-more-content-additional-item">
+                                    <div class="item-left">
+                                        Brand
+                                    </div>
+                                    <div class="line"></div>
+                                        <span>Senco</span>
+                                </div>
+                                <div class="detail-more-content-additional-item">
+                                    <div class="item-left">
+                                        Color
+                                    </div>
+                                    <div class="line"></div>
+                                        <span>Green, Purple, Red</span>
+                                </div>
+                                <div class="detail-more-content-additional-item">
+                                    <div class="item-left">
+                                        HDD Size
+                                    </div>
+                                    <div class="line"></div>
+                                        <span>512 GB, 64 GB</span>
+                                </div>
+                            </div>
+                            <div class="detail-more-content-review" id="review">
+                                <div class="review-title">
+                                    1 review for BeSmartphone1
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-content-top">
+                                        <div class="user">
+                                            <i class="fa-solid fa-user"></i>
+                                            MuffinGroup
+                                            <span>– August 18, 2022</span>
+                                        </div>
+                                        <div class="rate">
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="review-content-bottom">
+                                        Litora sapien egestas vulputate commodo curabitur amet.
+                                        Risus etiam phasellus convallis quis iaculis.
+                                        Cras ante si fringilla laoreet mollis nisi non erat.
+                                    </div>
+                                </div>
+                                <div class="review-note">
+                                    <h3>Add a review</h3>
+                                    <p>You must be <span> logged in</span> to post a review.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="advantage">
+                        <div class="row advantage-top">
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="advantage-text">
+                                    <h3>Best performance</h3>
+                                    <p> Mauris fringilla sem laoreet urna. Nunc elementum.
+                                        Phasellus ultrices, dui tellus, elementum vel, dignissim massa.
+                                        Maecenas facilisis, quam placerat vehicula vitae, lorem.
+                                        Donec sit amet felis. Curabitur nunc. Nam sed justo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="advantage-img">
+                                    <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-details-pic2.webp"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="advantage-img">
+                                    <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-details-pic3.webp"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="advantage-text">
+                                    <h3>Good optimization</h3>
+                                    <p> Mauris fringilla sem laoreet urna. Nunc elementum.
+                                        Phasellus ultrices, dui tellus, elementum vel, dignissim massa.
+                                        Maecenas facilisis, quam placerat vehicula vitae, lorem.
+                                        Donec sit amet felis. Curabitur nunc. Nam sed justo.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-additions">
+                        <h3>Product additions
+                        </h3>
+                        <p>Aboris nisi ut aliquip ex ea commodo consequor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fuariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="product-additions-item">
+                                    <i class="fa-solid fa-square-check"></i><span>Gift packaging</span>
+                                    <p>Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="product-additions-item">
+                                    <i class="fa-solid fa-square-check"></i><span>Gift packaging</span>
+                                    <p>Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="product-additions-item">
+                                    <i class="fa-solid fa-square-check"></i><span>Gift packaging</span>
+                                    <p>Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="product-additions-item">
+                                    <i class="fa-solid fa-square-check"></i><span>Gift packaging</span>
+                                    <p>Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specification">
+                        <h3>Specification</h3>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 ">
+                                <div class="specification-img">
+                                    <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-details-pic1.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12">
+                                <div class="specification-table">
+                                    <table>
+                                        <tr class="tr-head">
+                                            <td class="td-left">Brand</td>
+                                            <td class="td-right">Tempus litora</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Number of ports</td>
+                                            <td class="td-right">1</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Additions</td>
+                                            <td class="td-right">-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Hard Drive size</td>
+                                            <td class="td-right">256 MB, 512 MB, 1 TB, 2 TB</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Specific Uses For Product</td>
+                                            <td class="td-right">Neque aenean</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Processor Count</td>
+                                            <td class="td-right">12</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Operating System</td>
+                                            <td class="td-right">-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Additional drive</td>
+                                            <td class="td-right">N/A</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Congue</td>
+                                            <td class="td-right">-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="td-left">Semper</td>
+                                            <td class="td-right">full</td>
+
+                                        </tr>
+                                        <tr class="tr-last">
+                                            <td class="td-left">Series</td>
+                                            <td class="td-right">Euismod</td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="related-products">
+                        <div class="related-products-title">
+                            <h3>Related products</h3>
+                        </div>
+                        <div class="list-products">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <img src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic4.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BeMouse1</h5>
+                                            <p class="card-text">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </p>
+                                            <p class="card-text">$68.99</p>
+
+                                        </div>
+                                        <div class="card-hover">
+                                            <div class="card-hover-item">
+                                                <i class="fa-sharp fa-regular fa-link-simple"></i>
+                                            </div>
+                                            <div class="card-hover-item">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="card-hover-item">
+                                                <i class="fa-light fa-arrows-up-down-left-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <FooterComponent></FooterComponent>
+    </section>
+   
+</body>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/category.js"></script>
+<script src="/js/product.js"></script>
+<script type="text/javascript" src="/vendors/boostrap5.0.3/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</html>

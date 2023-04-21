@@ -1,0 +1,606 @@
+* {
+  color: #0B1A48;
+}
+
+.carousel-item .custom-image {
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 0;
+  width: 580;
+  height: 560px;
+  animation: fly ease-in-out 4s infinite;
+}
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.brand {
+  position: relative;
+  color: rgb(80, 30, 18);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.brand:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 8px;
+  background-color: rgb(80, 30, 18);
+}
+
+.brand-title {
+  color: rgb(80, 30, 18);
+  top: 100px;
+  left: 150px;
+  gap: 8px;
+}
+
+.get-louder {
+  left: 0;
+  top: 100px;
+  gap: 30px;
+  width: 100%;
+  font-size: 150px;
+  padding: 0 150px;
+  font-weight: 900;
+  color: rgb(80, 30, 18);
+}
+
+.only-buy-now {
+  color: rgb(80, 30, 18);
+  gap: 30px;
+  right: 150px;
+  bottom: 100px;
+}
+
+.banner3-text-top {
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 42px;
+  color: white;
+  font-weight: 900;
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.banner3-text-bottom {
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-banner {
+  position: relative;
+}
+.content-banner img {
+  border-style: double;
+  width: 100%;
+  animation: updown 5s linear infinite;
+}
+
+.content-anim {
+  position: absolute;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.content-banner {
+  display: flex;
+}
+
+.top-rate-products {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.top-rate-title {
+  text-align: center;
+}
+.top-rate-title h2 {
+  font-weight: 900;
+  font-size: 42px;
+}
+.top-rate-title p {
+  font-size: 16px;
+}
+
+.list-products {
+  padding: 30px 0;
+}
+.list-products .card {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 10px;
+}
+.list-products .card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.list-products .card .card-text {
+  color: #2a27e9;
+  font-size: 20px;
+}
+.list-products .card .card-text i {
+  color: #2a27e9;
+  font-size: 20px;
+}
+.list-products .card .card-hover {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.list-products .card .card-hover i {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.card:hover .card-hover {
+  display: block;
+}
+
+.special-offer {
+  background-color: #f7f7f7;
+  color: white;
+}
+
+.special-offer-box {
+  background-color: #522876;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.special-offer-box-left {
+  width: 50%;
+}
+.special-offer-box-left img {
+  width: 100%;
+}
+
+.special-offer-box-right {
+  width: 50%;
+  text-align: center;
+}
+.special-offer-box-right .special-offer-box-title h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+}
+.special-offer-box-right .special-offer-box-title p {
+  color: #C2C5F9;
+  font-size: 16px;
+}
+.special-offer-box-right .countdown {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-right: 40px;
+}
+.special-offer-box-right .countdown .countdown-item {
+  color: white;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 24px;
+  margin: 10px;
+}
+.special-offer-box-right .countdown .countdown-item span {
+  font-size: 16px;
+  color: white;
+}
+.special-offer-box-right .price {
+  font-size: 19px;
+  color: white;
+}
+.special-offer-box-right button {
+  background-color: #01CEEB;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 40px;
+  margin-top: 40px;
+}
+
+.card-option {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.card-option:hover {
+  transform: scale(1.15);
+  transition: linear 0.1s;
+}
+.card-option .icon-container {
+  margin-bottom: 15px;
+}
+.card-option .title {
+  font-weight: 600;
+  font-size: 17px;
+}
+.card-option .desc {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.carousel-indicators button {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #2a27e9;
+}
+
+.newest-products {
+  background-color: #f7f7f7;
+}
+
+.newest-products-title {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.newest-products-title h2 {
+  font-size: 42px;
+  font-weight: 900;
+}
+.newest-products-title p {
+  font-size: 16px;
+}
+
+.sound {
+  padding: 40px;
+  width: 100%;
+  background-image: url(https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-section-bg1.webp);
+  background-color: #F2F2F0;
+  background-size: 100%;
+}
+.sound .container {
+  display: flex;
+}
+.sound .newest-products-title {
+  width: 50%;
+}
+
+.why {
+  padding: 100px 0;
+}
+
+.why-title {
+  text-align: center;
+}
+.why-title p {
+  font-size: 20px;
+}
+.why-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.why-title span {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2a27e9;
+}
+
+.why-card {
+  margin-top: 40px;
+  background-color: #f7f7f7;
+  padding: 25px 35px;
+  border-radius: 20px;
+}
+.why-card .card-title {
+  font-weight: 600;
+}
+.offer {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.offer-title {
+  padding-bottom: 30px;
+}
+.offer-title h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.offer-content .card-offer {
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+  border: none;
+}
+.offer-content .card-offer img {
+  width: 35%;
+  margin: 0 auto;
+}
+.exclusive-brands {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+}
+.exclusive-brands .exclusive-brands-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.exclusive-brands .img-brands {
+  display: flex;
+  justify-content: space-between;
+}
+.exclusive-brands .img-brands img {
+  height: 75px;
+  margin: 20px 0;
+}
+
+.introduce {
+  padding: 100px 0;
+}
+.introduce .introduce-title h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2a27e9;
+  padding: 0px 50px 20px 0;
+}
+.introduce .introduce-title-child {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.introduce .introduce-content {
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.newsletter {
+  padding: 100px 0;
+  background-image: url(https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-section-bg2.webp);
+  background-size: 100%;
+}
+.newsletter .newsletter-left {
+  margin-top: 20%;
+  padding-right: 20px;
+  color: white;
+}
+.newsletter .newsletter-left p {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+.newsletter .newsletter-left h2 {
+  font-size: 42px;
+  font-weight: 900;
+}
+.newsletter .newsletter-left span {
+  background-color: #FFB300;
+  font-size: 42px;
+  font-weight: 900;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.newsletter .newsletter-left .check {
+  display: flex;
+}
+.newsletter .newsletter-left .check .check-item {
+  margin-right: 40px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.newsletter .newsletter-left .check .check-item i {
+  color: #2a27e9;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.newsletter .newsletter-right .form-newsletter {
+  border-radius: 16px;
+  background-color: white;
+  padding: 40px;
+}
+.newsletter .newsletter-right .form-newsletter .form-newsletter-title {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.newsletter .newsletter-right .form-newsletter form input {
+  height: 40px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+.newsletter .newsletter-right .form-newsletter form button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+strike {
+  color: #908ff0;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner1 .carousel-banner {
+    height: 668px;
+  }
+  .banner1 .carousel-banner .banner1-item-right {
+    display: none !important;
+  }
+  .banner1 .banner1-content {
+    margin-top: 200px;
+    left: unset !important;
+    gap: unset !important;
+    margin-left: 25%;
+  }
+  .banner1 .banner1-content .text-center {
+    display: none;
+  }
+  .banner1 .custom-image {
+    width: 70%;
+    height: 70%;
+  }
+  .banner2 .custom-image {
+    width: 80%;
+    height: auto;
+    right: -40px !important;
+    left: unset !important;
+  }
+  .banner2 .brand-title {
+    top: 20px;
+    left: 20px;
+  }
+  .banner2 .get-louder {
+    font-size: 94px;
+    bottom: 150px;
+    padding: 0 10px;
+    gap: 0 !important;
+    padding: 0 !important;
+    line-height: 100px;
+    top: unset;
+    left: 50px;
+    width: 50%;
+    flex-direction: column !important;
+  }
+  .banner2 .get-louder span:first-child {
+    padding-left: 20px;
+  }
+  .banner2 .only-buy-now {
+    flex-direction: column;
+    right: unset;
+    left: 50px;
+    gap: 10px;
+    bottom: 70px;
+  }
+  .sound {
+    background-size: cover;
+  }
+  .sound .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sound .newest-products-title {
+    width: 100%;
+    text-align: start;
+  }
+  .special-offer-box {
+    padding: 50px 20px 0 20px;
+    flex-direction: column-reverse;
+  }
+  .special-offer-box-left {
+    width: 100%;
+  }
+  .special-offer-box-left img {
+    width: 100%;
+  }
+  .special-offer-box-right {
+    width: 100%;
+    text-align: center;
+  }
+  .special-offer-box-right .countdown {
+    flex-direction: column;
+  }
+  .special-offer-box-right .countdown .countdown-item {
+    width: 100%;
+  }
+  .why-card {
+    text-align: center;
+  }
+  .why-card .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card-offer {
+    margin-bottom: 20px;
+  }
+  .introduce-title-child {
+    margin-top: 20px;
+  }
+  .newsletter {
+    padding: 0;
+    background-size: cover;
+  }
+  .newsletter .check {
+    flex-direction: column;
+  }
+  .newsletter .form-newsletter {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .banner2 .custom-image {
+    width: 60%;
+    height: auto;
+    left: unset !important;
+    right: 150px;
+  }
+  .banner2 .brand-title {
+    left: 40px;
+  }
+  .get-louder {
+    top: 140px;
+    gap: 30px;
+    width: 100%;
+    font-size: 120px;
+    padding: 0 20px;
+  }
+  .sound {
+    background-size: cover;
+  }
+  .sound .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sound .newest-products-title {
+    width: 100%;
+    text-align: start;
+  }
+  .sound .newest-products-title h2 {
+    font-size: 35px;
+  }
+  .sound .card {
+    width: 200px;
+  }
+  .sound .card-sound {
+    margin-right: 200px;
+  }
+}/*# sourceMappingURL=homePage.css.map */
