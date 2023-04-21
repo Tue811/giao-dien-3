@@ -82,7 +82,8 @@ class HeaderComponent{
                     <div class="container">
                         <div class="row">
                             <div class="col-2">
-                                <img src="/img/logo.png" alt="">
+                                
+                                <a href="/"><img src="/img/logo.png" alt=""></a>
                             </div>
                             <div class="col-6">
                                 <div class="input-group mb-3">
@@ -129,10 +130,10 @@ class HeaderComponent{
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-4">
-                                                <a href="#">PC's</a>
-                                                <a href="#">Laptops</a>
-                                                <a href="">Notebooks</a>
-                                                <a href="#">PC accessories</a>
+                                                <a href="/html/category.html">PC's</a>
+                                                <a href="/html/category.html">Laptops</a>
+                                                <a href="/html/category.html">Notebooks</a>
+                                                <a href="/html/category.html">PC accessories</a>
                                             </div>
                                             <div class="col-4">
                                                 <div><img src="/img/nav-computer.svg" alt=""></div>
