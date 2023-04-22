@@ -150,11 +150,15 @@
 }
 .list-products .card .card-text {
   color: #2a27e9;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .list-products .card .card-text i {
   color: #2a27e9;
-  font-size: 20px;
+  font-size: 16px;
+}
+.list-products .card .card-text span i {
+  color: #d3ced2;
 }
 .list-products .card .card-hover {
   display: none;
@@ -165,6 +169,17 @@
 .list-products .card .card-hover i {
   font-size: 16px;
   padding: 5px;
+}
+.list-products .card .on-sale {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: #2a27e9;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .card:hover .card-hover {
@@ -324,6 +339,7 @@
   background-color: #f7f7f7;
   padding: 25px 35px;
   border-radius: 20px;
+  border: none;
 }
 .why-card .card-title {
   font-weight: 600;
@@ -343,6 +359,8 @@
 }
 
 .offer-content .card-offer {
+  width: 100%;
+  height: 100%;
   padding: 30px;
   text-align: center;
   font-size: 24px;
