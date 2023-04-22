@@ -127,9 +127,13 @@
   background-color: white;
   color: #797979;
   box-shadow: 0px 10px 20px 0px rgba(1, 7, 39, 0.05);
+  position: relative;
 }
-.menu__dropdown--item i {
-  gap: end;
+.menu__dropdown--item div:first-child i {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  top: 18px;
 }
 .menu__dropdown--item:hover .dropdown--item--menu {
   display: grid;

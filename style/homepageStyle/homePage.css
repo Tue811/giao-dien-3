@@ -163,8 +163,9 @@
 .list-products .card .card-hover {
   display: none;
   position: absolute;
-  top: 30px;
+  bottom: calc(100% - 100px);
   right: 30px;
+  animation: show-rtl 0.2s linear;
 }
 .list-products .card .card-hover i {
   font-size: 16px;
@@ -182,6 +183,14 @@
   font-weight: 600;
 }
 
+@keyframes show-rtl {
+  from {
+    bottom: calc(100% - 120px);
+  }
+  to {
+    bottom: calc(100% - 100px);
+  }
+}
 .card:hover .card-hover {
   display: block;
 }
