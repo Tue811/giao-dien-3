@@ -15,7 +15,7 @@ $black-blue: #0B1A48;
     left: calc(50% - 200px);
     top: 0;
     width: 580;
-    height: 560px;
+    height: 530px;
     animation: fly ease-in-out 4s infinite;
   }
   
@@ -24,7 +24,7 @@ $black-blue: #0B1A48;
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-50px);
+      transform: translateY(-35px);
     }
     100% {
       transform: translateY(0);
@@ -37,7 +37,8 @@ $black-blue: #0B1A48;
   position: relative;
   color: rgb(80, 30, 18) ;
   font-size: 40px; 
-  font-weight: 700; letter-spacing: 5px;
+  font-weight: 700; 
+  letter-spacing: 5px;
   &:after {
     content: "";
     position: absolute;

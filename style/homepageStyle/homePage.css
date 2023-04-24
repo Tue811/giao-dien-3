@@ -7,7 +7,7 @@
   left: calc(50% - 200px);
   top: 0;
   width: 580;
-  height: 560px;
+  height: 530px;
   animation: fly ease-in-out 4s infinite;
 }
 @keyframes fly {
@@ -15,7 +15,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-50px);
+    transform: translateY(-35px);
   }
   100% {
     transform: translateY(0);
